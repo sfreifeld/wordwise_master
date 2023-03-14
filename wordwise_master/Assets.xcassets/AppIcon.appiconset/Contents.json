@@ -1,49 +1,49 @@
 {
   "images" : [
     {
-      "filename" : "Property 1=Default.png",
+      "filename" : "Property 1=Defaultedit.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "Property 1=Default (1).png",
+      "filename" : "Property 1=Default (1)edit.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "Property 1=Default (2).png",
+      "filename" : "Property 1=Default (2)edit.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "Property 1=Default (4).png",
+      "filename" : "Property 1=Default (4)edit.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "Property 1=Default (3).png",
+      "filename" : "Property 1=Default (3)edit.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "Property 1=Default (5).png",
+      "filename" : "Property 1=Default (5)edit.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "Property 1=Default (5)-1.png",
+      "filename" : "Property 1=Default (5)-1edit.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "Variant7.png",
+      "filename" : "Variant7edit.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -84,7 +84,7 @@
       "size" : "76x76"
     },
     {
-      "filename" : "image 2.png",
+      "filename" : "image 2edit.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
@@ -95,7 +95,7 @@
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "image 1.png",
+      "filename" : "image 3 (1)edit.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

@@ -18,7 +18,7 @@ struct LibraryButtonView: View {
                 .buttonStyle(SquishButtonStyle(fadeOnPress: false))
                 .font(Font.custom("Montserrat-Bold", size: 20))
                 .foregroundColor(.white)
-                //.shadow(color: .gray, radius: 15.0, x: 0, y: 10)
+
             }
         }
 

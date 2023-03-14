@@ -9,13 +9,15 @@ import SwiftUI
 
 struct LibraryView: View {
     @StateObject var libraryViewModelTest: LibraryViewModelTest
+    @StateObject var viewModel: HomeViewModel
     var body: some View {
-        LibraryNavigationView(libraryViewModelTest: libraryViewModelTest)
+        LibraryNavigationView(libraryViewModelTest: libraryViewModelTest, viewModel: viewModel)
+        
     }
 }
 
 struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
-        LibraryView(libraryViewModelTest: LibraryViewModelTest())
+        LibraryView(libraryViewModelTest: LibraryViewModelTest(), viewModel: HomeViewModel())
     }
 }

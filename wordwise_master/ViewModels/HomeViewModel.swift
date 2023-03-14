@@ -19,11 +19,24 @@ class HomeViewModel: ObservableObject {
     @Published var wordPosition: CGSize = .zero
     
     
+
     
     @Published var word = ""
     @Published var wordDescription = ""
     @Published var wordPartofSpeech = ""
     @Published var wordExample = ""
+    
+    @Published var savedWords: Set = Set<Word>()
+    
+    
+     var wordStruct: Word {
+            return Word(word: word, wordDescription: wordDescription, wordPartofSpeech: wordPartofSpeech, wordExample: wordExample)
+        }
+    
+    
+    var word1 = Word(word: "firstWord", wordDescription: "This is a definition of the word", wordPartofSpeech: "noun", wordExample: "This is an example of a sentence using the word")
+    
+    var testWordSet: Set<Word> = [Word(word: "firstWord", wordDescription: "This is a definition of the word", wordPartofSpeech: "noun", wordExample: "This is an example of a sentence using the word"), Word(word: "secondWord", wordDescription: "This is a definition of the word", wordPartofSpeech: "noun", wordExample: "This is an example of a sentence using the word")]
     
     func fetchData(){
         print("WordOfTheDayViewModel: fetchData")
@@ -48,20 +61,34 @@ class HomeViewModel: ObservableObject {
     }
         
         
-        func swipeLeft() {
-            wordStatus = .trashed
-            withAnimation  {
+
+    
+    func swipeLeft(_ word:Word) {
+        savedWords.remove(word)
+        let savedWordsData = try? JSONEncoder().encode(savedWords)
+        UserDefaults.standard.set(savedWordsData, forKey: "savedWords")
+        wordStatus = .trashed
+        withAnimation  {
                 wordPosition = CGSize(width: -400, height: 0)
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                withAnimation {
-                    self.showMessage = true
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            withAnimation {
+                self.showMessage = true
                 }
             }
         }
-        
     
-        func swipeRight() {
+    
+    
+    
+    
+    
+    
+    
+        func swipeRight(_ word:Word) {
+            savedWords.insert(word)
+            let savedWordsData = try? JSONEncoder().encode(savedWords)
+            UserDefaults.standard.set(savedWordsData, forKey: "savedWords")
             wordStatus = .saved
             withAnimation  {
                 wordPosition = CGSize(width: 400, height: 0)

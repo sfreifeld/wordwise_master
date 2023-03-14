@@ -27,7 +27,7 @@ struct WordCardView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
                     .fill(.white)
-                    .frame(width: 350, height: 380)
+                    .frame(width: UIScreen.main.bounds.width * 0.85, height: UIScreen.main.bounds.height * 0.45)
                     .shadow(color: .gray, radius: 2.5, x: 0, y: 5)
                 VStack {
                     Text("\(viewModel.word)")
@@ -56,7 +56,7 @@ struct WordCardView: View {
                     
                 }
                 
-                .frame(width: 330, height: 360)
+                .frame(width: UIScreen.main.bounds.width * 0.80, height: UIScreen.main.bounds.height * 0.40)
             }
             .offset(viewModel.wordPosition)
 
@@ -64,11 +64,10 @@ struct WordCardView: View {
                 DragGesture()
                     .onChanged { drag in
                         if drag.translation.width < -80 {
-                            viewModel.swipeLeft()
-                            
+                            viewModel.swipeLeft(viewModel.wordStruct)
                         }
                         else if drag.translation.width > 80 {
-                            viewModel.swipeRight()
+                            viewModel.swipeRight(viewModel.wordStruct)
                         }
                     }
             )

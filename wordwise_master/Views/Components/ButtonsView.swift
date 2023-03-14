@@ -16,11 +16,7 @@ struct ButtonsView: View {
             HStack {
                 Spacer()
                 Button {
-                    withAnimation {
-                        self.viewModel.wordPosition = CGSize(width: -400,height: 0)
-                       self.viewModel.showMessage = true
-                        }
-                    libraryViewModelTest.deleteWord(viewModel.word)
+                   viewModel.swipeLeft(viewModel.wordStruct)
                     } label: {
                         Image(systemName: "arrow.left")
                             .padding(.trailing, 50)
@@ -31,11 +27,10 @@ struct ButtonsView: View {
                     .foregroundColor(.white)
                     Spacer()
                     Button {
+                        print(viewModel.wordStruct)
                         withAnimation {
                             self.viewModel.showMessage = false
                             self.viewModel.wordPosition = .zero
-                            print("Button pressed")
-                            print("\(viewModel.wordPosition)")
                         }
                     }
                 label: {
@@ -48,15 +43,7 @@ struct ButtonsView: View {
                 .foregroundColor(.white)
                     Spacer()
                     Button {
-                        withAnimation {
-                            self.viewModel.wordPosition = CGSize(width: 400,height: 0)
-                            self.viewModel.showMessage = true
-
-                            
-                        }
-                        libraryViewModelTest.saveWord(viewModel.word)
-                        print(libraryViewModelTest.savedWords)
-                        // save word action
+                        viewModel.swipeRight(viewModel.wordStruct)
                     } label: {
                         Image(systemName: "arrow.right")
                         Text("Learn it")

@@ -1,26 +1,23 @@
 //
-//  HomeView.swift
+//  test.swift
 //  wordwise_master
 //
-//  Created by Sabrina Freifeld on 2/10/23.
+//  Created by Sabrina Freifeld on 3/10/23.
 //
 
 import SwiftUI
 
-struct HomeView: View {
+struct HomeViewtest: View {
     @StateObject var viewModel = HomeViewModel()
     @StateObject var libraryViewModelTest = LibraryViewModelTest()
     
     var body: some View {
-        NavigationView {
         ZStack {
             GradientBackgroundView()
             VStack {
-
-                DateView()
-                    .minimumScaleFactor(0.5)
-                    .padding(.bottom, UIScreen.main.bounds.height * 0.03)
-               WordCardView(viewModel: viewModel)
+                CalendarView(viewModel: CalendarViewModel())
+                    .padding([.top,.bottom], UIScreen.main.bounds.height * 0.04)
+                WordCardView(viewModel: viewModel)
                     .padding([.bottom], UIScreen.main.bounds.height * 0.03)
                 ButtonsView(viewModel: viewModel, libraryViewModelTest: libraryViewModelTest)
                     .padding([.bottom], UIScreen.main.bounds.height * 0.03)
@@ -29,14 +26,12 @@ struct HomeView: View {
                 }
                 .buttonStyle(SquishButtonStyle())
             }
-            }
-       
-        }  .navigationViewStyle(StackNavigationViewStyle())
-    } 
+        }
+    }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct HomeViewtest_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeViewtest()
     }
 }

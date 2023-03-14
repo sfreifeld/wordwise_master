@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89067E7B29BB8E5000EA39F4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89067E7A29BB8E5000EA39F4 /* test.swift */; };
+		89067E7D29BCE6B600EA39F4 /* WordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89067E7C29BCE6B600EA39F4 /* WordDetailView.swift */; };
+		89067E7F29BCF3D300EA39F4 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89067E7E29BCF3D300EA39F4 /* WordModel.swift */; };
+		89067E8129BE436500EA39F4 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89067E8029BE436500EA39F4 /* DateView.swift */; };
+		89067E8329BFA48C00EA39F4 /* testList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89067E8229BFA48C00EA39F4 /* testList.swift */; };
 		8960A8C42997314200DA7A67 /* wordwise_masterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960A8C32997314100DA7A67 /* wordwise_masterApp.swift */; };
 		8960A8C82997314400DA7A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8960A8C72997314400DA7A67 /* Assets.xcassets */; };
 		8960A8CB2997314400DA7A67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8960A8CA2997314400DA7A67 /* Preview Assets.xcassets */; };
@@ -39,6 +44,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89067E7A29BB8E5000EA39F4 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		89067E7C29BCE6B600EA39F4 /* WordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailView.swift; sourceTree = "<group>"; };
+		89067E7E29BCF3D300EA39F4 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		89067E8029BE436500EA39F4 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		89067E8229BFA48C00EA39F4 /* testList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testList.swift; sourceTree = "<group>"; };
 		8960A8C02997314100DA7A67 /* wordwise_master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordwise_master.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8960A8C32997314100DA7A67 /* wordwise_masterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordwise_masterApp.swift; sourceTree = "<group>"; };
 		8960A8C72997314400DA7A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +139,7 @@
 			children = (
 				8960A8D22997321500DA7A67 /* Components */,
 				8960A8D62997328A00DA7A67 /* HomeView.swift */,
+				89067E7A29BB8E5000EA39F4 /* test.swift */,
 				8960A8DA299732E600DA7A67 /* LibraryView.swift */,
 			);
 			path = Views;
@@ -143,6 +154,9 @@
 				8960A8EA299733D700DA7A67 /* LibraryButtonView.swift */,
 				8960A8EC299733ED00DA7A67 /* LibraryNavigationView.swift */,
 				8960A8FC29973B6F00DA7A67 /* GradientBackgroundView.swift */,
+				89067E8229BFA48C00EA39F4 /* testList.swift */,
+				89067E7C29BCE6B600EA39F4 /* WordDetailView.swift */,
+				89067E8029BE436500EA39F4 /* DateView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -162,6 +176,7 @@
 			children = (
 				8960A8EF2997344200DA7A67 /* Library.swift */,
 				8960A8F5299736C900DA7A67 /* APIRequest.swift */,
+				89067E7E29BCF3D300EA39F4 /* WordModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -279,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8960A8D72997328A00DA7A67 /* HomeView.swift in Sources */,
+				89067E7B29BB8E5000EA39F4 /* test.swift in Sources */,
 				8960A8F02997344200DA7A67 /* Library.swift in Sources */,
 				8960A8E72997339E00DA7A67 /* ButtonsView.swift in Sources */,
 				8960A8F8299736DC00DA7A67 /* APIRequestHelper.swift in Sources */,
@@ -287,11 +303,15 @@
 				8960A8DB299732E600DA7A67 /* LibraryView.swift in Sources */,
 				8960A8EB299733D700DA7A67 /* LibraryButtonView.swift in Sources */,
 				8960A8E32997337200DA7A67 /* CalendarView.swift in Sources */,
+				89067E8129BE436500EA39F4 /* DateView.swift in Sources */,
 				8960A8DD2997330000DA7A67 /* LibraryViewModel.swift in Sources */,
 				8960A8ED299733ED00DA7A67 /* LibraryNavigationView.swift in Sources */,
 				8960A9052997444400DA7A67 /* SquishButtonStyle.swift in Sources */,
+				89067E8329BFA48C00EA39F4 /* testList.swift in Sources */,
 				8960A8E12997335100DA7A67 /* WordCardView.swift in Sources */,
+				89067E7F29BCF3D300EA39F4 /* WordModel.swift in Sources */,
 				8960A8D9299732D300DA7A67 /* HomeViewModel.swift in Sources */,
+				89067E7D29BCE6B600EA39F4 /* WordDetailView.swift in Sources */,
 				8960A8F6299736C900DA7A67 /* APIRequest.swift in Sources */,
 				8960A8FD29973B6F00DA7A67 /* GradientBackgroundView.swift in Sources */,
 			);
@@ -426,6 +446,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "wordwise-master-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WordWise Daily";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -436,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sabrina.wordwise-master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -457,6 +478,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "wordwise-master-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WordWise Daily";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -467,7 +489,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sabrina.wordwise-master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

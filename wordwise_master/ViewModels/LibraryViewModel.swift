@@ -9,7 +9,7 @@ import Foundation
 
 class LibraryViewModelTest: ObservableObject {
     
-    @Published var savedWords: Set = Set<String>()
+   // @Published var savedWords: Set = Set<String>()
     
     //init() {
       //  if let savedWordsData = UserDefaults.standard.data(forKey: "savedWords"),
@@ -19,23 +19,6 @@ class LibraryViewModelTest: ObservableObject {
         
         
         
-        func saveWord(_ word: String) {
-            // Add word to savedWords array
-            savedWords.insert(word)
-            
-            // Save updated savedWords array to UserDefaults
-            let savedWordsData = try? JSONEncoder().encode(savedWords)
-            UserDefaults.standard.set(savedWordsData, forKey: "savedWords")
-        }
-        
-        func deleteWord(_ word: String) {
-            // Remove word from savedWords array
-             savedWords.remove(word)
-                
-                // Save updated savedWords array to UserDefaults
-                let savedWordsData = try? JSONEncoder().encode(savedWords)
-                UserDefaults.standard.set(savedWordsData, forKey: "savedWords")
-            
-        }
+
     }
     

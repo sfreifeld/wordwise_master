@@ -5,6 +5,9 @@
 //  Created by Sabrina Freifeld on 2/10/23.
 //
 
+
+// ARCHIVED
+
 import SwiftUI
 
 struct CalendarView: View {
@@ -16,7 +19,7 @@ struct CalendarView: View {
 
        var body: some View {
            VStack {
-            HStack(spacing: 25){
+               HStack(spacing: UIScreen.main.bounds.width * 0.06 ){
              ForEach(0..<7) { index in
                  HStack{
                      VStack {
